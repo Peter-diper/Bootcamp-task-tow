@@ -7,6 +7,7 @@
   --color-red-secondery: #2f0d0c;
   --color-gray-200: #f7f7f7;
   --color-gray-300: #1717171a;
+  --color-gray-400: #302f2fa2;
   --color-gray-600: #494a48;
   --color-gray-900: #606060;
   --color-black: #1a1814;
@@ -135,8 +136,7 @@ body {
 }
 
 /* product */
-.content--blouk {
-}
+
 .product--item {
   display: flex;
   flex-direction: column;
@@ -306,3 +306,83 @@ body {
   }
 }
 
+/* side bar menu */
+
+.user--dashbord {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+  padding: clamp(2rem, 5vw, 2.6rem) clamp(1.6rem, 5vw, 1.9rem);
+  border-radius: 2rem;
+  background-color: var(--color-gray-200);
+}
+.user--profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user--profile__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.imag--profile--wrapper {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1.2rem;
+}
+.user--name {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 500;
+  color: var(--color-black);
+}
+.user--number {
+  color: var(--color-gray-400);
+  font-size: clamp(1.4rem, 3vw, 1.6rem);
+}
+.user--detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.8rem;
+}
+.custome--line {
+  width: 100%;
+  background-color: var(--color-gray-300);
+  height: 0.2rem;
+}
+.user--menu {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3.4rem, 5vw, 4.8rem);
+}
+.user--menu__header {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vw, 2.4rem);
+}
+
+.user--sect__btn {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  text-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  border-radius: 0;
+  border: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  gap: 1.2rem;
+  border-radius: 4.4rem;
+  padding: 1.4rem 1.6rem;
+  background-color: transparent;
+  color: var(--color-black);
+  font-family: inherit;
+}
+.user--order {
+  background-color: var(--color-red-secondery);
+  color: white;
+}
